@@ -1,17 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Connect.JasonDiaz.info</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #87ceeb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .frame {
+      background: #f5f6fa;
+      border-radius: 20px;
+      /* More prominent, deeper shadow */
+      box-shadow: 0 20px 64px rgba(0,0,0,0.28), 0 4px 16px rgba(0,0,0,0.15);
+      padding: 9rem 2rem;
+      max-width: 465px;
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .oval-btn {
+      display: block;
+      width: 100%;
+      padding: 1.1rem 0;
+      border: none;
+      border-radius: 14px;
+      background: #ffe082;
+      color: #4a2c00; /* Darker font color */
+      font-size: 1.1rem;
+      font-weight: 700; /* Bolder font */
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      /* More prominent shadow for buttons */
+      box-shadow: 0 6px 24px rgba(255,224,130,0.32), 0 2px 8px rgba(0,0,0,0.18);
+      cursor: pointer;
+    }
+    .oval-btn:hover, .oval-btn:focus {
+      background: #ffd54f;
+      color: #2d1500;
+      outline: none;
+      /* Even stronger shadow on hover */
+      box-shadow: 0 10px 36px rgba(255,224,130,0.38), 0 4px 16px rgba(0,0,0,0.22);
+    }
+    h1 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #222;
+      letter-spacing: 2px;
+    }
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    @media (max-width: 480px) {
+      .frame {
+        padding: 2.25rem 0.5rem;
+        max-width: 98vw;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+  <div class="frame">
+    <h1>JasonDiaz.info</h1>
+    <div class="links">
+      <a class="oval-btn" href="https://jasondtx.substack.com" target="_blank" rel="noopener">Substack</a>
+      <a class="oval-btn" href="https://x.com/JasonDiaz" target="_blank" rel="noopener">X (Twitter)</a>
+      <a class="oval-btn" href="https://www.linkedin.com/in/jasonbdiaz" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
 </body>
-
 </html>
